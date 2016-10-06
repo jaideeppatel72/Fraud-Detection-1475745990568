@@ -2,10 +2,12 @@ applications:
 - path: javaCloudantWorkloadSchedulerApp.war
   memory: 512M
   instances: 1
-  domain: au-syd.mybluemix.net
+  domain: mybluemix.net
   name: Fraud Detection
-  host: Fraud-Detection
+  host: fraud-detection
   disk_quota: 1024M
   services:
-  - Fraud Detection-cloudantNoSQLDB
-  - Fraud Detection-WorkloadScheduler
+  - DataWorks-ss
+  - Workload Scheduler-yl
+  - dashDB-k9
+  - Cloudant NoSQL DB-pl

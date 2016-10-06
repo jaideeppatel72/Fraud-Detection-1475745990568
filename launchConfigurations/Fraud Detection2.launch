@@ -11,9 +11,9 @@
             },
             "Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager"
         },
-        "Name": "Fraud Detection2",
+        "Name": "Fraud Detection",
         "Target": {
-            "Org": "siddharthshroff61",
+            "Org": "jaideeppatel72@gmail.com",
             "Space": "sp",
             "Url": "https://api.ng.bluemix.net"
         },
