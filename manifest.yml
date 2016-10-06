@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Fraud Detection
+  host: fraud-detection
+  disk_quota: 1024M
+  services:
+  - DataWorks-ss
+  - Workload Scheduler-yl
+  - dashDB-k9
+  - Cloudant NoSQL DB-pl
