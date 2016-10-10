@@ -177,8 +177,7 @@ function addItem(item, isNew){
 	}
 	else //if new row
 	{
-		row.innerHTML = "<td class='content'><textarea rows='1' id='nameText' onkeydown='onKey(event)' placeholder=\"Enter a title for your favourites...\"></textarea></td><td class='content'><table border=\"0\"><tr border=\"0\"><td class='content'><textarea id='valText'  onkeydown='onKey(event)' placeholder=\"Enter a description...\"></textarea></td></tr></table>"+attachButton+"</td>" +
-		    "<td class = 'contentAction'><span class='deleteBtn' onclick='deleteItem(this)' title='delete me'></span></td>";
+		row.innerHTML =attachButton+"<td class = 'contentAction'><span class='deleteBtn' onclick='deleteItem(this)' title='delete me'></span></td>";
 	}
 
 	var table = document.getElementById('notes');
