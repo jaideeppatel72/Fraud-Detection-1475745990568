@@ -244,7 +244,7 @@ public class ResourceServlet {
 			List<HashMap> allDocs = db.view("_all_docs").query(HashMap.class);
 
 			// calculate min modification time, as now - 2 days
-			long minModTime = System.currentTimeMillis() - 2 * DAY_MILLISECS;
+			long minModTime = System.currentTimeMillis() - 1 * DAY_MILLISECS;
 
 			System.out.println("Cleanup - Min modification time: " + minModTime);
 
@@ -279,7 +279,6 @@ public class ResourceServlet {
 	private JsonArray getAttachmentList(LinkedTreeMap<String, Object> attachmentList, String docID) {
 		JsonArray attachmentArray = new JsonArray();
 		String URLTemplate = CloudantClientMgr.getDatabaseURL();
-
 		for (Object key : attachmentList.keySet()) {
 			LinkedTreeMap<String, Object> attach = (LinkedTreeMap<String, Object>) attachmentList.get(key);
 

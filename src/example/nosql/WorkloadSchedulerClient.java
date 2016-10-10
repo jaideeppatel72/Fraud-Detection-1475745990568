@@ -132,9 +132,8 @@ public class WorkloadSchedulerClient {
 			p.addStep(s1); 
 		
 			// Define trigger to run it every day at 10
-			Trigger trigger = TriggerFactory.everyDayAt(10, 0);
-			
-			p.addTrigger(trigger);
+			Trigger trigger = TriggerFactory.everyDayAt(0,5);
+				p.addTrigger(trigger);
 			
 			// Finally create and enable the process
 		    process = ws.createAndEnableTask(p);
