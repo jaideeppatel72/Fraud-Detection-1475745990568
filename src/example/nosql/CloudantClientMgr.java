@@ -17,7 +17,7 @@ public class CloudantClientMgr {
     private static CloudantClient cloudant = null;
     private static Database db = null;
 
-    private static String databaseName = "sample_nosql_db";
+    private static String databaseName = "CSV_File_Upload_Details";
 
     private static String url = null;
     private static String user = null;
