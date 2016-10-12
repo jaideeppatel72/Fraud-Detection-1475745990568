@@ -132,11 +132,8 @@ public class WorkloadSchedulerClient {
 			p.addStep(s1); 
 		
 			// Define trigger to run it every day at 10
-			List<Trigger> trigger = TriggerFactory.fromCron("0 0/5 * 1/1 * ? *");
-			for(Trigger trig : trigger)
-			{
-				p.addTrigger(trig);
-			}
+			Trigger trigger = (Trigger) TriggerFactory.fromCron("0 0/5 * 1/1 * ? *");
+			p.addTrigger(trigger);
 			/*Trigger trigger = TriggerFactory.everyDayAt(0,05);
 				p.addTrigger(trigger);*/
 			
